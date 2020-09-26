@@ -1,0 +1,92 @@
+@import "../../style/colors.scss";
+@import "../../style/variables.scss";
+
+.container__card--wealth {
+  background: $white;
+  width: 344px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 3.5px 3.5px 0px -2px rgba(154, 163, 188, 0.5);
+  margin: $margin-3 auto;
+  padding: $padding-2 $padding-3;
+  padding-bottom: 0px;
+
+  .card--wealth__title__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    .card--wealth__title {
+      color: $blue;
+      font-size: $font-4;
+    }
+    .card--wealth__icon__menu {
+      color: $gray;
+      font-size: $font-2;
+      cursor: pointer;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  .card--wealth__amount--invested {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .amount--invested__title {
+      font-size: $font-1;
+      color: $dark-gray;
+      padding: 0;
+      margin: 35px 0 0 0;
+    }
+    .amount--invested__amount {
+      font-size: $font-3;
+      color: $blue;
+      font-weight: bold;
+      padding: 0;
+      margin: 7px 0 0 0;
+    }
+  }
+  .card--wealth__informations {
+    margin: 34px 0 0 0;
+    .informations__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 12px 0 0 0;
+
+      .informations__label {
+        font-size: $font-1;
+        color: $dark-gray;
+      }
+      .informations__values {
+        font-size: $font-2;
+        color: $blue;
+        font-weight: bold;
+      }
+    }
+  }
+  .card--wealth__button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 22px 0 0 0;
+    border-top: 1px solid $gray;
+    .button__see__more {
+      background: $white;
+      border: 1px solid $blue;
+      border-radius: 25px;
+      font-size: $font-1;
+      font-weight: bold;
+      padding: 7px 13px;
+      color: $blue;
+      cursor: pointer;
+      margin: 22px 0 14px 0;
+      &:hover {
+        background: $blue;
+        color: $white;
+      }
+    }
+  }
+}
